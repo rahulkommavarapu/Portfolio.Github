@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/RAHUL%20(Portfolio).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Style.css">
+        <link rel="Stylesheeet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>K.Rahul Portfolio</title>
+</head>
+<body>
+        <div class="hero">
+        <nav>
+            <img src="Image Logo.jfif.jpg" class="Logo">
+            <ul>
+                <li><a herf="#">Home</a></li>
+                <li><a herf="#">About</a></li>
+                <li><a herf="#">Skills</a></li>
+                <li><a herf="#">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="info">
+           <h1>Iam Rahul Kommavarapu</h1>
+           <p>
+            Self-Motivated,dedicated,and organized,seeking for an opportunity to expand my knowledge and devote myself to the best of my ability.<br><b>
+            I strongly believe my Knowledge and skills will add value to my work and imbibe the required skill set.</b><br></p>
+                
+        </div>
+        <div class="right-img">
+            <img src="Image Shape.jpg" calss="Shape">
+            <img src="Image Photo NEW.jpg" calss="Photo">
+        </div>  
+
+        </div>
+
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
